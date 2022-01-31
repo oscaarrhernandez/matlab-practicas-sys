@@ -1,4 +1,4 @@
-# matlab-practicas-sys
+# Matlab Practicas SyS
 
 Las dos últimas prácticas están casi perfectas, creo recordar que tenia un 9,5 y un 10.
 
