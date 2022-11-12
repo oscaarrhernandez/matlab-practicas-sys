@@ -1,0 +1,25 @@
+
+w0 = 50*pi;
+sistema1=redRC(w,w0);
+G1=F1.*sistema1;
+
+hold on
+[t2,y2]=inv_espectro(w,G1,0.2);
+plot(t2,y2)
+hold off
+
+[w,coef,t,y]=rectangular_c(5,0.002,0.01,-0.1,0.1,50,0);
+
+figure('Name','DISTORSION | w0 = 5000*pi','NumberTitle','off');
+plot(t,y);
+[w,F1]=espectro(t,y,0.01);
+
+w0 = 5000*pi;
+
+hold on
+
+sistema1=redRC(w,w0);
+
+G1=F1.*sistema1;
+plot(w,abs(G1))
+hold off
